@@ -173,7 +173,7 @@ Route::group(['middleware' => ['UserAuth']], function () {
 
     //financial
 
-    Route::get('export-payhistory/{from}/{to}/{id}','Web\Admincontroller@payableHistoryExport')->name('payablehistoryexport');
+    Route::get('export-payhistory/{from}/{to}/{id}','Web\AdminController@payableHistoryExport')->name('payablehistoryexport');
     Route::get('export-expensehistory/{from}/{to}', 'Web\AdminController@expenseHistoryExport')->name('expensehistoryexport');
     Route::get('searchIncomeHistory','Web\AdminController@incomeHistoryExport')->name('incomehistoryexport');
 
